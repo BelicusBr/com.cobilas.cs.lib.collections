@@ -197,6 +197,9 @@ namespace Cobilas.Collections {
         public static void Reverse(Array array)
             => Array.Reverse(array, 0, array.Length);
 
+        public static void Resize<T>(ref T[] array, int newSize)
+            => Array.Resize<T>(ref array, newSize);
+
         /// <summary>Indica se a lista está vazia.</summary>
         public static bool EmpytArray(ICollection array)
             => array == null || array.Count == 0;
