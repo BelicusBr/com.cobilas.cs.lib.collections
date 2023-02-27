@@ -222,6 +222,12 @@ namespace Cobilas.Collections {
         public static bool IsReadOnlySafe(Array array)
             => array != null && array.IsReadOnly;
 
+        public static bool IsFixedSizeSafe(Array array)
+            => array != null && array.IsFixedSize;
+
+        public static bool IsSynchronizedSafe(ICollection collection)
+            => collection != null && collection.IsSynchronized;
+
 #if NET5_0_OR_GREATER
         public static T[] CreateEmptyArray<T>()
             => Array.Empty<T>();
