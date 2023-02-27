@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace Cobilas.Collections {
+    //.net35 => 1.2.0
+    //.net5  => 1.1.0
     /// <summary>Classe de manipulação de matriz.</summary>
     public static class ArrayManipulation {
         /// <summary>Insira um item no idice de um <see cref="Array"/>.</summary>
