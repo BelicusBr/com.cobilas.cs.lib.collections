@@ -210,5 +210,8 @@ namespace Cobilas.Collections {
 
         public static long ArrayLongLength(Array array)
             => array == null ? 0L : array.LongLength;
+
+        public static bool IsReadOnlySafe(Array array)
+            => array != null && array.IsReadOnly;
     }
 }
