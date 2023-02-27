@@ -11,7 +11,13 @@ namespace Cobilas.Collections {
         /// <param name="index">Indice alvo.</param>
         /// <param name="list"><see cref="Array"/> alvo.</param>
         public static T[] Insert<T>(T[] itens, int index, T[] list) {
-            if (list == null) list = new T[0];
+            if (list == null) {
+#if NET5_0_OR_GREATER
+                list = CreateEmptyArray<T>();
+#else
+                list = new T[0];
+#endif
+            }
             T[] newList = new T[list.Length + itens.Length];
             Array.Copy(list, 0, newList, 0, index);
             Array.Copy(itens, 0, newList, index, itens.Length);
@@ -213,5 +219,10 @@ namespace Cobilas.Collections {
 
         public static bool IsReadOnlySafe(Array array)
             => array != null && array.IsReadOnly;
+
+#if NET5_0_OR_GREATER
+        public static T[] CreateEmptyArray<T>()
+            => Array.Empty<T>();
+#endif
     }
 }
