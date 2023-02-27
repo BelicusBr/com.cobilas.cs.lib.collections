@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Cobilas.Collections</RootNamespace>
+    <AssemblyName>Cobilas.Collections</AssemblyName>
+    <Authors>Cobilas</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>CSharp</PackageTags>
+    <PackageId>Cobilas.Collections.net5</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;Net5</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Cobilas.Collections\ArrayManipulation.cs" Link="ArrayManipulation.cs" />
+    <Compile Include="..\Cobilas.Collections\ArrayToIEnumerator.cs" Link="ArrayToIEnumerator.cs" />
+    <Compile Include="..\Cobilas.Collections\ICollectionToIEnumerator.cs" Link="ICollectionToIEnumerator.cs" />
+    <Compile Include="..\Cobilas.Collections\IReadOnlyArray.cs" Link="IReadOnlyArray.cs" />
+    <Compile Include="..\Cobilas.Collections\IReadOnlyArrayGeneric.cs" Link="IReadOnlyArrayGeneric.cs" />
+  </ItemGroup>
+
+</Project>
