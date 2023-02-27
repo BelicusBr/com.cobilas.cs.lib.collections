@@ -9,6 +9,7 @@
     <PackageTags>CSharp</PackageTags>
     <PackageId>Cobilas.Collections.net5</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
