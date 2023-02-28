@@ -7,9 +7,12 @@
     <Authors>Cobilas</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>CSharp</PackageTags>
-    <PackageId>Cobilas.Collections.net5</PackageId>
+    <PackageId>Cobilas.Collections</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.1.0</Version>
+    <Version>2.0.0</Version>
+    <PackageProjectUrl>https://www.nuget.org/packages/Cobilas.Collections</PackageProjectUrl>
+    <Description>Array manipulation</Description>
+    <PackageReleaseNotes>Updated for NET 5</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
