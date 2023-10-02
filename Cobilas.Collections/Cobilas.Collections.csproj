@@ -9,10 +9,12 @@
     <PackageTags>CSharp</PackageTags>
     <PackageId>Cobilas.Collections</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2.0.0</Version>
+    <Version>2.0.1</Version>
     <PackageProjectUrl>https://www.nuget.org/packages/Cobilas.Collections</PackageProjectUrl>
     <Description>Array manipulation</Description>
     <PackageReleaseNotes>Updated for NET 5</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/BelicusBr/com.cobilas.cs.lib.collections</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
