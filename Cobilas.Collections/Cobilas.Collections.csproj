@@ -13,6 +13,8 @@
     <PackageProjectUrl>https://www.nuget.org/packages/Cobilas.Collections</PackageProjectUrl>
     <Description>Array manipulation</Description>
     <PackageReleaseNotes>Updated for NET 5</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/BelicusBr/com.cobilas.cs.lib.collections</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
